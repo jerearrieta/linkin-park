@@ -35,17 +35,17 @@ src/
   lib/
     albums.ts                 Arma los álbumes y canciones a partir de data/
     importLyrics.ts           Lee el archivo .txt de letras (con pruebas)
-    storage.ts                Guarda letras y enlaces en el navegador
+    storage.ts                Guarda letras y el volumen en el navegador
     audioFiles.ts             Guarda los archivos de audio del visitante (IndexedDB)
     queue.ts                  Cola de reproducción: orden, aleatorio y repetir (con pruebas)
-    embed.ts, links.ts        Reproductores y enlaces a Spotify, YouTube y letras.com
+    links.ts                  Enlace al álbum en Spotify
 ```
 
 Cada canción se identifica por una clave `<álbum>-<número>` (por ejemplo `met-13` para "Numb"). Esa clave se usa para guardar las letras y también se acepta en el archivo de importación.
 
 ## Reproductor
 
-La web tiene un reproductor propio: una barra fija abajo con anterior, reproducir, siguiente, aleatorio, repetir, barra de progreso y volumen, que sigue sonando al cambiar de página y responde a las teclas multimedia y a la pantalla de bloqueo. Reproduce archivos de audio que el visitante elige desde su equipo, uno por canción o todos los de un álbum de una vez (se reconocen por el nombre del archivo). Se guardan en el navegador (IndexedDB); la web no aloja audio. El reproductor oficial de Spotify sigue debajo.
+La web tiene un reproductor propio: una barra fija abajo con anterior, reproducir, siguiente, aleatorio, repetir, barra de progreso y volumen, que sigue sonando al cambiar de página y responde a las teclas multimedia y a la pantalla de bloqueo. Reproduce archivos de audio que el visitante elige desde su equipo, uno por canción o todos los de un álbum de una vez (se reconocen por el nombre del archivo). Se guardan en el navegador (IndexedDB); la web no aloja audio.
 
 Cómo se diseñó, a partir de un análisis con [REA](https://github.com/morluto/rea): [docs/reproductor-analisis.md](docs/reproductor-analisis.md).
 
