@@ -35,9 +35,6 @@ export const getLyrics = (trackKey: string): Lyrics | null =>
 export const saveLyrics = (trackKey: string, lyrics: Lyrics) => write(`letra:${trackKey}`, lyrics);
 export const deleteLyrics = (trackKey: string) => remove(`letra:${trackKey}`);
 
-export const getPlayerLink = (trackKey: string) => read<string>(`enlace:${trackKey}`);
-export const savePlayerLink = (trackKey: string, url: string) => write(`enlace:${trackKey}`, url);
-export const deletePlayerLink = (trackKey: string) => remove(`enlace:${trackKey}`);
 
 /** Subscribe to changes made anywhere on the page (for live counters and badges). */
 export function onStorageChange(fn: () => void) {

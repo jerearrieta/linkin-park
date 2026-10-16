@@ -2,20 +2,18 @@
 
 import { useRef } from "react";
 import { allTracks } from "@/lib/albums";
-import { getLyrics, getPlayerLink, saveLyrics, savePlayerLink } from "@/lib/storage";
+import { getLyrics, saveLyrics } from "@/lib/storage";
 import type { Lyrics } from "@/lib/types";
 import { useToast } from "./Toast";
 import styles from "./BackupPanel.module.css";
 
-type Backup = { letras: Record<string, Lyrics>; enlaces: Record<string, string> };
+type Backup = { letras: Record<string, Lyrics> };
 
 function dump(): string {
-  const out: Backup = { letras: {}, enlaces: {} };
+  const out: Backup = { letras: {} };
   for (const t of allTracks) {
     const l = getLyrics(t.key);
     if (l) out.letras[t.key] = l;
-    const e = getPlayerLink(t.key);
-    if (e) out.enlaces[t.key] = e;
   }
   return JSON.stringify(out, null, 1);
 }
@@ -42,7 +40,6 @@ export function BackupPanel() {
       const d = JSON.parse(box.current!.value) as Partial<Backup>;
       let n = 0;
       for (const [k, v] of Object.entries(d.letras ?? {})) if (saveLyrics(k, v)) n++;
-      for (const [k, v] of Object.entries(d.enlaces ?? {})) savePlayerLink(k, v);
       toast(`${n} letras importadas`);
     } catch {
       toast("El texto pegado no es una copia válida");
@@ -58,8 +55,8 @@ export function BackupPanel() {
     >
       <summary>Copia de seguridad de tus letras</summary>
       <p className="note" style={{ marginTop: 10 }}>
-        Tus letras y enlaces se guardan solo en este navegador. Los archivos de audio no entran en esta copia. Copiá este texto para respaldarlos o pasarlos a
-        otro equipo, y pegalo acá para importarlos.
+        Tus letras se guardan solo en este navegador. Los archivos de audio no entran en esta copia. Copiá este texto para respaldarlas o pasarlas a
+        otro equipo, y pegalo acá para importarlas.
       </p>
       <textarea id="backup-text" ref={box} spellCheck={false} aria-label="Copia de seguridad" />
       <div className="row">
