@@ -48,7 +48,8 @@ export function ImportLyrics({ showHelpLink = true }: { showHelpLink?: boolean }
           {showHelpLink && (
             <>
               {" "}
-              <Link href="/formato/">Cómo armar el archivo</Link>
+              <Link href="/formato/">Cómo armar el archivo</Link> ·{" "}
+              <Link href="/boton/">Cargar letras con un clic</Link>
             </>
           )}
         </span>
