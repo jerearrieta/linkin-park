@@ -8,9 +8,9 @@
   --accent: #d6453a;
   --album: var(--accent);
   --on-album: #ffffff;
-  --display: var(--font-display), "Arial Narrow", Impact, sans-serif;
-  --body: var(--font-body), system-ui, -apple-system, "Segoe UI", sans-serif;
-  --mono: var(--font-mono), ui-monospace, Menlo, Consolas, monospace;
+  --display: "Big Shoulders", "Arial Narrow", Impact, sans-serif;
+  --body: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, Menlo, Consolas, monospace;
   color-scheme: dark;
 }
 * { box-sizing: border-box; }

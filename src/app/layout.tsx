@@ -1,17 +1,14 @@
 import type { Metadata } from "next";
-import { Big_Shoulders, IBM_Plex_Mono, IBM_Plex_Sans } from "next/font/google";
 import { ToastProvider } from "@/components/Toast";
+// Fonts are bundled from @fontsource so the build never depends on downloading from Google Fonts.
+import "@fontsource/big-shoulders/latin-600.css";
+import "@fontsource/big-shoulders/latin-800.css";
+import "@fontsource/ibm-plex-sans/latin-400.css";
+import "@fontsource/ibm-plex-sans/latin-500.css";
+import "@fontsource/ibm-plex-sans/latin-600.css";
+import "@fontsource/ibm-plex-mono/latin-400.css";
+import "@fontsource/ibm-plex-mono/latin-500.css";
 import "./globals.css";
-
-const display = Big_Shoulders({
-  subsets: ["latin"],
-  weight: ["600", "800"],
-  variable: "--font-display",
-  // next/font has no metrics for this family, so skip the generated fallback face
-  adjustFontFallback: false,
-});
-const body = IBM_Plex_Sans({ subsets: ["latin"], weight: ["400", "500", "600"], variable: "--font-body" });
-const mono = IBM_Plex_Mono({ subsets: ["latin"], weight: ["400", "500"], variable: "--font-mono" });
 
 export const metadata: Metadata = {
   title: { default: "Linkin Park Discoteca", template: "%s · Linkin Park" },
@@ -20,7 +17,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="es" className={`${display.variable} ${body.variable} ${mono.variable}`}>
+    <html lang="es">
       <body>
         <ToastProvider>{children}</ToastProvider>
       </body>
