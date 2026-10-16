@@ -1,0 +1,6 @@
+.shelf { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 22px; margin-top: 24px; }
+.sleeve { display: grid; gap: 10px; text-decoration: none; }
+.sleeve:hover > div:first-child { transform: translateY(-4px) rotate(-.6deg); box-shadow: 0 18px 40px rgba(0, 0, 0, .5); }
+.meta { display: flex; justify-content: space-between; gap: 8px; font-size: 13px; color: var(--muted); }
+.meta b { color: var(--fg); font-weight: 600; }
+@media (prefers-reduced-motion: reduce) { .sleeve:hover > div:first-child { transform: none; } }

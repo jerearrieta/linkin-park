@@ -1,0 +1,8 @@
+.tracks { list-style: none; margin: 32px 0 0; padding: 0; border-top: 1px solid var(--line); }
+.tracks a { display: grid; grid-template-columns: 3ch minmax(0, 1fr) auto; gap: 16px; align-items: center; padding: 13px 8px; border-bottom: 1px solid var(--line); text-decoration: none; }
+.tracks a:hover { background: var(--panel); }
+.n { font: 500 13px/1 var(--mono); color: var(--muted); font-variant-numeric: tabular-nums; text-align: right; }
+.name { font-weight: 500; min-width: 0; }
+.feat { color: var(--muted); font-weight: 400; }
+.chips { display: flex; gap: 6px; }
+@media (max-width: 720px) { .chips { display: none; } }

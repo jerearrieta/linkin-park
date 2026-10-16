@@ -1,0 +1,9 @@
+.head { display: grid; grid-template-columns: minmax(0, 300px) minmax(0, 1fr); gap: 32px; align-items: end; }
+.head h1 { font-size: clamp(40px, 7vw, 76px); }
+.facts { display: flex; flex-wrap: wrap; gap: 6px 18px; margin-top: 12px; font: 400 13px/1.5 var(--mono); color: var(--muted); }
+.facts b { color: var(--fg); font-weight: 500; }
+.actions { margin-top: 16px; }
+@media (max-width: 720px) {
+  .head { grid-template-columns: 1fr; }
+  .head > div:first-child { max-width: 260px; }
+}

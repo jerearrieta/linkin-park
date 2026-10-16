@@ -1,0 +1,118 @@
+/**
+ * "De qué trata": original Spanish explanations of each song, keyed by track key.
+ * These are interpretations written for this site, not translations of the lyrics.
+ */
+export const explanations: Record<string, string> = {
+// Hybrid Theory (2000)
+"ht-1": "Habla de la paranoia y de esa voz interna que te critica y te observa todo el tiempo. Mike y Chester describen la sensación de que hay algo dentro de la cabeza, como una cara bajo la piel, que te hace dudar de todo y de todos. Es una canción sobre la ansiedad vista desde adentro.",
+"ht-2": "Es el estallido de alguien que ya no aguanta más. El narrador está al borde, rodeado de gente y situaciones que lo presionan, y avisa que está a un paso de romperse. El famoso grito del final es la explosión de toda esa bronca contenida.",
+"ht-3": "Trata de una relación que terminó y de no poder soltarla. El protagonista se siente vacío sin la otra persona, la busca en todos lados y se da cuenta de que se fue quedando solo mientras intentaba aferrarse.",
+"ht-4": "Es una crítica a alguien que se aprovecha de los demás y se cree con autoridad sobre ellos. El narrador le dice que todo el poder que tiene se lo dieron otros, y que ese control que ejerce va a terminar volviéndose en su contra.",
+"ht-5": "Chester escribió sobre su lucha con las adicciones y la sensación de perder el control de uno mismo. La letra describe una herida que no cierra y la confusión de no saber si el problema viene de afuera o de adentro; reconoce que la inseguridad lo está consumiendo. Ganó el Grammy en 2002.",
+"ht-6": "Habla de querer escapar de una vida donde otros deciden todo por vos. El protagonista se siente moldeado y aplastado por expectativas ajenas (familia, sociedad) y su única salida es huir.",
+"ht-7": "Describe el choque entre lo que uno muestra y lo que siente. El narrador está atrapado en su propia cabeza, con pensamientos que lo desbordan, y siente que nadie a su alrededor lo entiende.",
+"ht-8": "La canción más famosa de la banda. Habla de esforzarse muchísimo por algo y descubrir que al final nada de eso importó: el tiempo pasó, la confianza se rompió y el resultado fue el fracaso igual. Mike cuenta la historia en los versos y Chester canta la frustración en el estribillo.",
+"ht-9": "Va dirigida a alguien que te invade, que se mete en tu espacio y en tu cabeza. El narrador le pide que se aleje y le advierte que su paciencia se terminó.",
+"ht-10": "Es una canción sobre el pasado que pesa. El narrador recuerda cómo era antes, se pregunta en qué momento se perdió y siente que esa parte de sí mismo quedó olvidada.",
+"ht-11": "Es un instrumental: no tiene letra. Muestra el lado más electrónico y de hip hop de la banda, con el trabajo de Joe Hahn en los scratches y las bases.",
+"ht-12": "Cierra el disco con la sensación de haberlo dado todo por alguien que solo te usó. El protagonista se siente vaciado, se aleja y reconoce que lo que más le dolió fue dejarse tratar así.",
+
+// Meteora (2003)
+"met-1": "Es una introducción corta, casi sin letra: sonidos de papel y ambiente que abren el disco y llevan directo a la canción siguiente.",
+"met-2": "Es el rechazo a alguien que te hizo mal. El narrador le dice que no se quede, que no quiere ser parte de su mundo ni de sus problemas; elige cortar el vínculo antes de dejarse arrastrar.",
+"met-3": "Habla de querer salir de la depresión y encontrar un lugar propio. Chester describe estar entumecido, cansado de sentir dolor, y buscar algo real a lo que pertenecer. Es una canción de búsqueda, con una salida esperanzadora.",
+"met-4": "Trata de la culpa y de dejar de mentirle a alguien. El narrador sabe que estuvo actuando un personaje y decide alejarse para dejar de lastimar, aunque eso implique quedarse solo.",
+"met-5": "Habla de tocar fondo después de haberte creído intocable. Alguien que estaba en lo alto termina cayendo, y la canción describe esa caída sin remedio.",
+"met-6": "Es sobre esconder el dolor en vez de enfrentarlo. El narrador reconoce que es más fácil huir de lo que le pasa que arreglarlo, y que si pudiera cambiar el pasado lo haría. Habla de cicatrices que no se ven.",
+"met-7": "Es el grito de alguien que se siente ignorado y desvalorizado. Pide que lo escuchen, que no lo traten como si no existiera; es pura frustración por la falta de respeto.",
+"met-8": "Habla de la lucha interna contra uno mismo, de sentir que hay una parte tuya que te tira hacia abajo y de no poder confiar en tu propia cabeza.",
+"met-9": "Chester la sintió como una de las más personales. Habla de romper con un hábito destructivo (las adicciones, el autodaño) y de no saber por qué uno vuelve a caer en lo mismo. Termina con la decisión de cortar con ese ciclo.",
+"met-10": "Trata de la traición desde adentro: alguien cercano que te falla y te deja sin saber en quién confiar. El narrador se pregunta cómo pudo pasar sin que lo notara.",
+"met-11": "Es la canción más hip hop del disco, con una flauta japonesa (shakuhachi). Mike y Chester hablan de que nadie escucha realmente, de la gente que habla sin saber y de seguir adelante igual.",
+"met-12": "Es un instrumental, sin letra: una pieza electrónica y de scratches que fue nominada al Grammy.",
+"met-13": "Habla de la presión de tener que ser lo que otros esperan de vos. El narrador está cansado de intentar cumplir con alguien (se suele leer como un padre o una figura de autoridad) y siente que esa exigencia lo dejó entumecido. Es uno de los himnos sobre sentirse incomprendido.",
+
+// Minutes to Midnight (2007)
+"mtm-1": "Es una introducción instrumental, sin letra, que abre el disco con un clima tenso.",
+"mtm-2": "Describe la desesperación de alguien atrapado en su propia cabeza: insomnio, ansiedad y la sensación de no poder escapar de uno mismo. Chester sostiene un grito de varios segundos que se volvió famoso.",
+"mtm-3": "Es una despedida. El narrador piensa en qué quedará de él cuando se vaya y pide que lo recuerden por lo bueno y no por sus errores. Años después de la muerte de Chester, muchos fans la escuchan como un homenaje.",
+"mtm-4": "Habla de la violencia y el descontrol de una noche que se va de las manos, con un tono casi de fiesta. Mike rapea sobre todo lo que sale mal, y el estribillo invita a soltar todo hasta que sangre.",
+"mtm-5": "Trata de la tristeza que llega cuando algo termina, como el día que se apaga. Se suele leer como una canción sobre la depresión o sobre una pérdida: aceptar que el sol se pone y que hay que dejar ir.",
+"mtm-6": "Es una canción de borrón y cuenta nueva. El narrador mira todo lo que hizo mal y decide empezar de cero, perdonarse y enfrentar sus errores. Fue la canción principal de Transformers (2007).",
+"mtm-7": "Es una protesta contra la guerra y los gobiernos que la usan. Mike rapea desde el punto de vista de alguien joven en un mundo violento; tiene un tono político poco común en sus discos anteriores.",
+"mtm-8": "Es una crítica a los líderes que mienten y manipulan, sobre todo en la política y la religión. El narrador les dice que ya no va a sufrir por sus engaños.",
+"mtm-9": "Habla de cómo el amor se transforma en dolor cuando una relación termina. El día de los enamorados, que antes era feliz, ahora le recuerda lo que perdió.",
+"mtm-10": "Mike canta sobre una relación en la que no supo estar a la altura. Es un pedido de disculpas: reconoce que se quedó en el medio, sin decidirse, y que eso lastimó a la otra persona.",
+"mtm-11": "Trata de una traición en pareja. El narrador descubre que lo engañaron y siente que lo que había entre ellos quedó hecho pedazos.",
+"mtm-12": "Habla del huracán Katrina y del abandono que sufrieron sus víctimas, aunque también se lee como una reflexión sobre quedarse solo y ser olvidado. Termina con un largo solo de guitarra de Brad.",
+
+// A Thousand Suns (2010)
+"ats-1": "Es la introducción del disco: una voz digital que habla de la destrucción y del final, preparando el tema central del álbum (la amenaza nuclear y el miedo a la guerra).",
+"ats-2": "Usa la voz real de J. Robert Oppenheimer, el físico de la bomba atómica, citando un texto hindú sobre la muerte y la destrucción de mundos. Es el punto de partida del concepto del disco.",
+"ats-3": "Habla del arrepentimiento por los errores que ya no se pueden deshacer. El narrador siente que todo lo que construyó se está quemando y que perdió lo que más quería.",
+"ats-4": "Es un interludio corto de sonido ambiente (grillos, disparos lejanos), sin letra cantada, que separa partes del disco.",
+"ats-5": "Mike rapea sobre la persecución y sobre mantenerse firme ante los ataques. Es una canción combativa, con percusiones tribales.",
+"ats-6": "Habla de seguir adelante aunque el mundo esté en contra, con un mensaje de aliento: no rendirse aunque te traten como una máquina.",
+"ats-7": "Es un interludio corto. Su nombre viene del desierto donde se probó la primera bomba atómica en 1945. Casi no tiene letra.",
+"ats-8": "Trata de los finales y de empezar de nuevo. El narrador siente que todo terminó y busca la forma de volver a empezar. Es una de las canciones más queridas del disco.",
+"ats-9": "Chester grita sobre el colapso: todo se apaga, la luz se va, y hay que resistir en la oscuridad. Es una de las más intensas del álbum.",
+"ats-10": "Es una crítica al poder y a los reyes que se enriquecen mientras el pueblo sufre. Incluye la voz de Mario Savio, un activista de los años 60, llamando a frenar la maquinaria del sistema.",
+"ats-11": "Usa un discurso de Martin Luther King contra la guerra de Vietnam, con la voz cada vez más distorsionada. Es un interludio sobre la violencia y la injusticia.",
+"ats-12": "Habla de dejar ir el pasado y la culpa. El narrador le dice a alguien que se sintió abandonado que suelte todo eso y siga. Se usó en Transformers 3.",
+"ats-13": "Es un interludio corto, con la voz distorsionada, sobre el final de todo. Lleva directo a The Catalyst.",
+"ats-14": "Es el clímax del disco. Habla de una destrucción total y de un pedido de salvación, como una oración en medio del fin del mundo. La parte final cambia el tono hacia la esperanza.",
+"ats-15": "Cierra el álbum: Chester canta solo con guitarra acústica. Dice que, cuando todo se destruye, lo único que queda es el amor. Es el mensaje final después de todo el caos.",
+
+// Living Things (2012)
+"lt-1": "Trata de alguien que no puede librarse del recuerdo de una persona o de un error. El narrador quiere dejarlo atrás, pero todo vuelve a resonar como un eco.",
+"lt-2": "Habla de una relación tóxica o de una carga emocional que dejó al narrador destruido. Lo que queda de él son restos, y aun así sigue adelante.",
+"lt-3": "Es sobre un ciclo: construir algo y después destruirlo, una y otra vez. Se puede leer como la relación de la banda con la fama o como una relación personal que se repite.",
+"lt-4": "Es pura rabia contra la mentira, la codicia y la miseria. El narrador le dice a alguien que está cansado de sus engaños.",
+"lt-5": "Habla de partir: el narrador se va y no piensa volver. Es una despedida dura, sin vuelta atrás.",
+"lt-6": "Trata de sentirse frágil e inútil. El narrador se compara con un castillo de cristal, algo que se ve fuerte pero se rompe fácil, y pide que lo lleven de vuelta a casa.",
+"lt-7": "Es una canción muy corta y agresiva sobre sentirse víctima y negarse a seguir siéndolo.",
+"lt-8": "Trata de las decisiones que no tomaste y de los caminos que quedaron sin recorrer. Es una canción triste sobre dejar ir a alguien o a una parte de tu vida.",
+"lt-9": "Habla de pelear hasta el final, aunque cueste la piel y los huesos. Es una canción sobre la resistencia.",
+"lt-10": "Es sobre el rechazo y la venganza. Mike y Chester describen llegar al límite y no aceptar más maltrato; en la parte final cambia de tono.",
+"lt-11": "Es un interludio instrumental corto que lleva a la última canción.",
+"lt-12": "Habla de sentirse impotente para ayudar a alguien que se está destruyendo. El narrador ve cómo esa persona se pierde y no puede hacer nada.",
+
+// The Hunting Party (2014)
+"thp-1": "Abre el disco con mucha rabia. Habla de alguien que llegó a la cima, perdió el rumbo y ahora le dan las llaves de un reino que se está desmoronando.",
+"thp-2": "Es una crítica a quienes hacen promesas vacías. Todo lo que se dijo y prometió terminó siendo para nada.",
+"thp-3": "Es una crítica a la industria musical y a la gente que repite fórmulas sin arriesgar. Rakim aparece con un verso sobre la autenticidad y el legado.",
+"thp-4": "Es un interludio instrumental corto.",
+"thp-5": "Es una canción punk muy corta y rápida sobre la guerra y el caos.",
+"thp-6": "Habla de un mundo desolado y de la gente que se pierde en él. Es una crítica social sobre la gente desesperada y la sociedad que no los ve.",
+"thp-7": "Trata de lo que se pierde y de reconocer su valor cuando ya no está. El narrador le pide a alguien que apague esa luz interna que lo consume.",
+"thp-8": "Es una protesta contra la opresión, con Daron Malakian de System of a Down. Habla de rebelarse contra quienes controlan a la gente.",
+"thp-9": "Habla de un mundo marcado por la muerte y la culpa: marcar tumbas, recordar a los caídos.",
+"thp-10": "Es un instrumental con Tom Morello de Rage Against the Machine, sin letra.",
+"thp-11": "Trata de una relación que se terminó y de dejar caer las máscaras. El narrador acepta que ya no hay nada que salvar.",
+"thp-12": "Cierra el disco con una reflexión sobre marcar límites. El narrador traza una línea y dice hasta acá: ya no va a dejarse arrastrar.",
+
+// One More Light (2017)
+"oml-1": "Habla de la responsabilidad de salvarse a uno mismo. El narrador reconoce que nadie puede rescatarlo de sus propios problemas.",
+"oml-2": "Es una despedida a alguien que te subestimó. El narrador se va con la frente en alto. Pusha T y Stormzy suman versos de rap.",
+"oml-3": "Está contada desde la perspectiva de la pareja de alguien con adicciones, que siente que ya no puede llegar a esa persona. Después de la muerte de Chester, cobró un significado muy fuerte.",
+"oml-4": "Trata de seguir adelante en medio de una batalla interna. El narrador sabe que va a caer y se levanta igual.",
+"oml-5": "Mike canta desde el lugar de un padre que siente que su hijo ya no lo ve ni lo escucha. Le dice que, aunque se vuelva invisible para él, va a seguir ahí.",
+"oml-6": "Trata de no poder salir de tu propia cabeza, de los pensamientos negativos que te pesan. Chester y Kiiara cantan sobre lo difícil que es cargar con tu mente.",
+"oml-7": "Mike la escribió para su familia. Es un pedido de perdón por estar lejos, por las giras y el trabajo, y por perderse momentos importantes.",
+"oml-8": "Habla de un error que se repite: estar casi bien pero sin terminar de acertar, como en una adicción de la que se sale a medias.",
+"oml-9": "Es sobre la pérdida de alguien querido. Aunque una luz se apague entre millones, para quien la quería importa muchísimo. Se convirtió en el homenaje más claro a Chester.",
+"oml-10": "Es un consejo de vida: equivocarse es parte de crecer, y los golpes te enseñan. Tiene un tono casi folk.",
+
+// From Zero (2024)
+"fz-1": "Es una introducción muy corta. El nombre del disco viene de Xero, el primer nombre de la banda: empezar de nuevo desde cero.",
+"fz-2": "Trata de alguien que se entregó por completo a una persona o una causa que solo lo vació por dentro. Se suele leer como una crítica a la manipulación, las sectas o la fama. Fue el primer single con Emily Armstrong.",
+"fz-3": "Habla de cortar un vínculo que te hace daño. El narrador está cansado de cruzar ese puente una y otra vez y decide romperlo.",
+"fz-4": "Trata del peso de la responsabilidad, de cargar una corona que agota. Fue el himno del Mundial de League of Legends 2024.",
+"fz-5": "Emily canta sola sobre una relación donde los dos hablan uno encima del otro y ninguno escucha. Es sobre la falta de comunicación.",
+"fz-6": "Es una canción punk rápida y agresiva sobre sentirse una víctima colateral de alguien que arrasa con todo.",
+"fz-7": "Es sobre sentirse desbordado: las emociones se acumulan hasta que se rebalsan. Tiene un tono más tranquilo y electrónico.",
+"fz-8": "Trata de alguien con dos caras: dice una cosa y hace otra. El narrador ya no sabe en quién confiar.",
+"fz-9": "Habla de las marcas que deja el pasado, como manchas que no se van, y de convivir con ellas.",
+"fz-10": "El título es la sigla de I Gave You Everything I Have: le di todo lo que tenía. Es una canción de rabia hacia alguien que no valoró el esfuerzo.",
+"fz-11": "Cierra el disco con algo agridulce: las cosas buenas también se terminan, y hay que aceptarlo."
+};

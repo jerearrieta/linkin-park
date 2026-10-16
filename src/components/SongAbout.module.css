@@ -1,0 +1,2 @@
+.about { margin-top: 28px; padding: 18px 20px; border-left: 3px solid var(--album); background: var(--panel); display: grid; gap: 8px; }
+.about p { margin: 0; font-size: 17px; line-height: 1.6; max-width: 70ch; }
