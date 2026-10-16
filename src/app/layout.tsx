@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { PlayerProvider } from "@/components/PlayerProvider";
 import { ToastProvider } from "@/components/Toast";
 // Fonts are bundled from @fontsource so the build never depends on downloading from Google Fonts.
 import "@fontsource/big-shoulders/latin-600.css";
@@ -19,7 +20,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="es">
       <body>
-        <ToastProvider>{children}</ToastProvider>
+        <ToastProvider>
+          <PlayerProvider>{children}</PlayerProvider>
+        </ToastProvider>
       </body>
     </html>
   );

@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { trackHref } from "@/lib/albums";
 import type { Track } from "@/lib/types";
+import { AudioBadge } from "./AudioBadge";
 import { LyricsBadge } from "./LyricsBadge";
 import styles from "./TrackList.module.css";
 
@@ -17,6 +18,7 @@ export function TrackList({ tracks }: { tracks: Track[] }) {
             </span>
             <span className={styles.chips}>
               {t.single && <span className="chip single">Single</span>}
+              <AudioBadge trackKey={t.key} />
               <LyricsBadge trackKey={t.key} />
             </span>
           </Link>

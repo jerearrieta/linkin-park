@@ -43,6 +43,7 @@ h1, h2, h3 { text-wrap: balance; margin: 0; }
 .btn:hover { border-color: var(--album); }
 .btn.primary { background: var(--album); border-color: var(--album); color: var(--on-album); font-weight: 600; }
 .btn.ghost { background: transparent; }
+.btn:disabled { opacity: .5; cursor: default; border-color: var(--line); }
 
 .chip { font: 500 10.5px/1 var(--mono); letter-spacing: .08em; text-transform: uppercase; padding: 5px 7px; border: 1px solid var(--line); color: var(--muted); white-space: nowrap; }
 .chip.single { border-color: var(--album); color: var(--album); }
