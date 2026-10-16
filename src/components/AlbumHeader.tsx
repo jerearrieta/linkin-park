@@ -2,6 +2,7 @@ import Link from "next/link";
 import { albums, trackHref } from "@/lib/albums";
 import { spotifyAlbumUrl } from "@/lib/links";
 import type { Album } from "@/lib/types";
+import { AlbumAudio } from "./AlbumAudio";
 import { AlbumCover } from "./AlbumCover";
 import styles from "./AlbumHeader.module.css";
 
@@ -33,6 +34,7 @@ export function AlbumHeader({ album }: { album: Album }) {
           <a className="btn" href={spotifyAlbumUrl(album.spotifyAlbumId)} target="_blank" rel="noopener">
             Álbum en Spotify ↗
           </a>
+          <AlbumAudio album={album} />
         </div>
       </div>
     </section>

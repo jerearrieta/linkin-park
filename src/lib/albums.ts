@@ -42,3 +42,6 @@ export function albumNeighbors(album: Album) {
 
 export const albumHref = (a: Pick<Album, "slug">) => `/${a.slug}/`;
 export const trackHref = (t: Pick<Track, "albumSlug" | "n">) => `/${t.albumSlug}/${t.n}/`;
+
+const byKey = new Map(albums.flatMap((a) => a.tracks.map((t) => [t.key, { album: a, track: t }] as const)));
+export const findByKey = (key: string) => byKey.get(key);

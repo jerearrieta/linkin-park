@@ -58,7 +58,7 @@ export function BackupPanel() {
     >
       <summary>Copia de seguridad de tus letras</summary>
       <p className="note" style={{ marginTop: 10 }}>
-        Tus letras y enlaces se guardan solo en este navegador. Copiá este texto para respaldarlos o pasarlos a
+        Tus letras y enlaces se guardan solo en este navegador. Los archivos de audio no entran en esta copia. Copiá este texto para respaldarlos o pasarlos a
         otro equipo, y pegalo acá para importarlos.
       </p>
       <textarea id="backup-text" ref={box} spellCheck={false} aria-label="Copia de seguridad" />

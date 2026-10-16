@@ -48,3 +48,6 @@ export function onStorageChange(fn: () => void) {
     window.removeEventListener("storage", fn);
   };
 }
+
+export const getVolume = () => read<number>("volumen") ?? 0.8;
+export const saveVolume = (v: number) => write("volumen", v);
