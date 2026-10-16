@@ -1,0 +1,24 @@
+.lyrics { margin-top: 28px; }
+.head { display: flex; justify-content: space-between; align-items: end; gap: 12px; flex-wrap: wrap; padding-bottom: 10px; border-bottom: 1px solid var(--line); }
+.head h2 { font-size: 28px; }
+.labels, .pair { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; }
+.labels { margin-top: 16px; font: 500 12px/1 var(--mono); letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
+.labels div:last-child { color: var(--album); }
+.pairs { margin-top: 10px; }
+.pair { padding: 3px 0; }
+.pair p { margin: 0; min-width: 0; overflow-wrap: anywhere; }
+.pair p:last-child { color: color-mix(in srgb, var(--album) 55%, var(--fg)); }
+.pair:hover p { background: color-mix(in srgb, var(--album) 8%, transparent); }
+.gap { height: 14px; }
+.empty { margin-top: 18px; padding: 22px; border: 1px dashed var(--line); display: grid; gap: 12px; }
+.empty h3 { font: 600 16px/1.3 var(--body); }
+.empty p { margin: 0; color: var(--muted); max-width: 70ch; }
+.editor { margin-top: 18px; display: grid; gap: 12px; }
+.two { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.editor label { display: grid; gap: 6px; font: 500 12px/1 var(--mono); letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+.editor textarea { min-height: 320px; resize: vertical; padding: 10px 12px; background: var(--panel); border: 1px solid var(--line); font: 14px/1.6 var(--body); text-transform: none; letter-spacing: 0; color: var(--fg); }
+@media (max-width: 720px) {
+  .two { grid-template-columns: 1fr; }
+  .labels { display: none; }
+  .pair { grid-template-columns: 1fr; gap: 0; padding: 6px 0; }
+}
