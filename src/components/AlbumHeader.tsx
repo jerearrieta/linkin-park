@@ -1,4 +1,3 @@
-import { albums } from "@/lib/albums";
 import type { Album } from "@/lib/types";
 import { AlbumCover } from "./AlbumCover";
 import styles from "./AlbumHeader.module.css";
@@ -8,9 +7,6 @@ export function AlbumHeader({ album }: { album: Album }) {
     <section className={styles.head}>
       <AlbumCover album={album} size="large" />
       <div>
-        <div className="eyebrow">
-          Álbum {album.n} de {albums.length}
-        </div>
         <h1 className="display">{album.title}</h1>
         <p className="lede">{album.note}</p>
         <div className={styles.facts}>
