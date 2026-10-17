@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { CloudSync } from "@/components/Account";
 import { PlayerProvider } from "@/components/PlayerProvider";
 import { ToastProvider } from "@/components/Toast";
 // Fonts are bundled from @fontsource so the build never depends on downloading from Google Fonts.
@@ -21,6 +22,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="es">
       <body>
         <ToastProvider>
+          <CloudSync />
           <PlayerProvider>{children}</PlayerProvider>
         </ToastProvider>
       </body>

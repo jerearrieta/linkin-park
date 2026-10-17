@@ -1,5 +1,6 @@
 import Link from "next/link";
 import type { Album } from "@/lib/types";
+import { Account } from "./Account";
 import { BackupPanel } from "./BackupPanel";
 import styles from "./PageShell.module.css";
 
@@ -24,6 +25,7 @@ export function PageShell({ crumbs, album, children }: { crumbs: Crumb[]; album?
           </ol>
         </nav>
       </header>
+      <Account />
       <main>{children}</main>
       <BackupPanel />
     </div>
