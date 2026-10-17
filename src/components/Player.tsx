@@ -1,7 +1,6 @@
 "use client";
 
 import { deleteAudio, saveAudio } from "@/lib/audioFiles";
-import { currentUser } from "@/lib/cloud";
 import { useAudioKeys } from "@/lib/useAudioKeys";
 import type { Album, Track } from "@/lib/types";
 import { usePlayer } from "./PlayerProvider";
@@ -28,16 +27,11 @@ export function Player({ album, track }: { album: Album; track: Track }) {
 
   async function pickFile(file: File | undefined) {
     if (!file) return;
-    if (currentUser()) toast("Subiendo el archivo a tu cuenta…");
     try {
       await saveAudio(track.key, file);
       play(track.key);
-      if (currentUser()) toast("Archivo subido a tu cuenta");
-    } catch (e) {
-      if (e instanceof Error && e.message === "upload") {
-        play(track.key);
-        toast("Quedó en este navegador, pero no se pudo subir a tu cuenta");
-      } else toast("No se pudo guardar el archivo: puede que no haya espacio en el navegador");
+    } catch {
+      toast("No se pudo guardar el archivo: puede que no haya espacio en el navegador");
     }
   }
 
@@ -82,7 +76,7 @@ export function Player({ album, track }: { album: Album; track: Track }) {
       <p className="note">
         {hasFile
           ? "Suena en la barra de abajo y sigue sonando aunque cambies de página. Pasa sola a las canciones del álbum que también tengan archivo."
-          : "Elegí el archivo de esta canción desde tu equipo. Si entraste con tu cuenta, se sube a tu espacio privado y lo escuchás desde cualquier computadora."}
+          : "Elegí el archivo de esta canción desde tu equipo. Queda guardado solo en este navegador, no se sube a ningún lado."}
       </p>
     </section>
   );
