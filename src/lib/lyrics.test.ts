@@ -15,11 +15,11 @@ describe("pairLines", () => {
 
 describe("fillTranslation", () => {
   it("translates only empty lines, keeps stanza gaps and translates repeats once", async () => {
-    const calls: string[] = [];
-    const tr = async (s: string) => (calls.push(s), s.toUpperCase());
+    const calls: string[][] = [];
+    const tr = async (lines: string[]) => (calls.push(lines), lines.map((s) => s.toUpperCase()));
     const out = await fillTranslation({ original: "a\nb\n\na\nc", traduccion: "mía" }, tr);
     expect(out.traduccion).toBe("mía\nB\n\nA\nC");
-    expect(calls).toEqual(["b", "a", "c"]);
+    expect(calls).toEqual([["b", "a", "c"]]);
   });
 
   it("detects missing lines", () => {
