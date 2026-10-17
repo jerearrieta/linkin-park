@@ -6,6 +6,7 @@ import { deleteLyrics, getLyrics, saveLyrics } from "@/lib/storage";
 import { useStored } from "@/lib/useStored";
 import type { Lyrics, Track } from "@/lib/types";
 import { useToast } from "./Toast";
+import { TranslateButton } from "./Translate";
 import styles from "./Lyrics.module.css";
 
 /**
@@ -24,6 +25,7 @@ export function LyricsPanel({ track }: { track: Track }) {
           <a className="btn" href={`${track.letrasUrl}traduccion.html`} target="_blank" rel="noopener">
             Letra y traducción en letras.com ↗
           </a>
+          {!editing && lyrics && <TranslateButton track={track} lyrics={lyrics} />}
           {!editing && (
             <button className="btn" onClick={() => setEditing(true)}>
               {lyrics ? "Editar letra" : "Agregar letra"}
