@@ -1,4 +1,0 @@
-.bar { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; margin-top: 18px; }
-.bar a { color: var(--fg); }
-.result { margin-top: 14px; padding: 14px 16px; border: 1px solid var(--album); background: var(--panel); display: grid; gap: 6px; }
-.result p { margin: 0; color: var(--muted); }

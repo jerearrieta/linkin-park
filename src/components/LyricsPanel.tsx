@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { pairLines } from "@/lib/importLyrics";
+import { pairLines } from "@/lib/lyrics";
 import { deleteLyrics, getLyrics, saveLyrics } from "@/lib/storage";
 import { useStored } from "@/lib/useStored";
 import type { Lyrics, Track } from "@/lib/types";
@@ -10,7 +10,7 @@ import styles from "./Lyrics.module.css";
 
 /**
  * Two-column lyrics: original on the left, Spanish on the right, aligned line by line.
- * The text comes from the visitor (typed, pasted or imported); the site ships none.
+ * The text comes from the visitor (typed or pasted); the site ships none.
  */
 export function LyricsPanel({ track }: { track: Track }) {
   const lyrics = useStored(() => getLyrics(track.key), [track.key]);
@@ -40,8 +40,7 @@ export function LyricsPanel({ track }: { track: Track }) {
           <h3>Esta canción todavía no tiene letra cargada</h3>
           <p>
             Las letras de Linkin Park tienen derechos de autor, así que la página no las trae copiadas. Pegá la
-            letra original a la izquierda y la traducción a la derecha, o importá un archivo con varias desde el
-            inicio. Queda guardada en este navegador.
+            letra original a la izquierda y la traducción a la derecha. Queda guardada en este navegador.
           </p>
           <div>
             <button className="btn primary" onClick={() => setEditing(true)}>
