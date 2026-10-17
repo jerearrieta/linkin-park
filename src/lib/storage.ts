@@ -1,7 +1,9 @@
 import type { Lyrics } from "./types";
 import { userLyrics } from "@/data/lyrics";
+import { pushLyrics, removeCloudLyrics } from "./cloud";
 
-// Everything the visitor adds lives in this browser's localStorage, under "lp:".
+// Everything the visitor adds lives in this browser's localStorage, under "lp:". Lyrics are also
+// copied to the signed-in account (lib/cloud.ts), so they show up on any computer.
 const PREFIX = "lp:";
 const EVENT = "lp-storage";
 
@@ -32,8 +34,16 @@ function remove(key: string) {
 /** Saved lyrics win over the ones bundled in src/data/lyrics.ts. */
 export const getLyrics = (trackKey: string): Lyrics | null =>
   read<Lyrics>(`letra:${trackKey}`) ?? userLyrics[trackKey] ?? null;
-export const saveLyrics = (trackKey: string, lyrics: Lyrics) => write(`letra:${trackKey}`, lyrics);
-export const deleteLyrics = (trackKey: string) => remove(`letra:${trackKey}`);
+/** Only this browser's copy: used when the account's lyrics come down. */
+export const saveLocalLyrics = (trackKey: string, lyrics: Lyrics) => write(`letra:${trackKey}`, lyrics);
+export function saveLyrics(trackKey: string, lyrics: Lyrics) {
+  void pushLyrics(trackKey, lyrics);
+  return saveLocalLyrics(trackKey, lyrics);
+}
+export function deleteLyrics(trackKey: string) {
+  void removeCloudLyrics(trackKey);
+  remove(`letra:${trackKey}`);
+}
 
 
 /** Subscribe to changes made anywhere on the page (for live counters and badges). */

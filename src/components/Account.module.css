@@ -1,0 +1,4 @@
+.bar { display: flex; align-items: center; justify-content: space-between; gap: 10px; flex-wrap: wrap; margin: -12px 0 24px; padding: 10px 14px; border: 1px solid var(--line); background: var(--panel); font-size: 13px; color: var(--muted); }
+.bar b { color: var(--fg); font-weight: 600; }
+.bar span { flex: 1 1 280px; }
+.bar input { flex: 1 1 180px; padding: 8px 10px; background: var(--bg, transparent); border: 1px solid var(--line); color: var(--fg); font: 14px var(--body); }
