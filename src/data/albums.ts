@@ -9,7 +9,6 @@ export const albumData: AlbumInput[] = [
     year: 2000,
     date: "24 oct 2000",
     producers: "Don Gilmore",
-    spotifyAlbumId: "6hPkbAV3ZXpGZBGUvL6jVM",
     note: "El debut. Fue el álbum más vendido del mundo en 2001 y es Diamante en EE. UU.",
     colors: {
       bg: "#d8d0bf",
@@ -56,7 +55,6 @@ export const albumData: AlbumInput[] = [
     year: 2003,
     date: "25 mar 2003",
     producers: "Don Gilmore",
-    spotifyAlbumId: "0y13VbGddQ4azdVWakksAL",
     note: "Debutó n.º 1 en EE. UU. con más de 800 mil copias en una semana. Diamante desde octubre de 2026.",
     colors: {
       bg: "#34302d",
@@ -112,7 +110,6 @@ export const albumData: AlbumInput[] = [
     year: 2007,
     date: "15 may 2007",
     producers: "Rick Rubin y Mike Shinoda",
-    spotifyAlbumId: "2tlTBLz2w52rpGCLBGyGw6",
     note: "El giro hacia el rock alternativo. Debutó n.º 1 en EE. UU.",
     colors: {
       bg: "#8f8f8a",
@@ -159,7 +156,6 @@ export const albumData: AlbumInput[] = [
     year: 2010,
     date: "14 sep 2010",
     producers: "Rick Rubin y Mike Shinoda",
-    spotifyAlbumId: "5uvXx5ZQswNRFCdHR521YZ",
     note: "Álbum conceptual y electrónico sobre la amenaza nuclear, pensado para escucharse de corrido.",
     colors: {
       bg: "#a8231c",
@@ -213,7 +209,6 @@ export const albumData: AlbumInput[] = [
     year: 2012,
     date: "26 jun 2012",
     producers: "Rick Rubin y Mike Shinoda",
-    spotifyAlbumId: "4XHIjbhjRmqWlosjj5rqSI",
     note: "Mezcla de sus primeros sonidos con lo electrónico. Debutó n.º 1 en EE. UU.",
     colors: {
       bg: "#ebe5d6",
@@ -260,7 +255,6 @@ export const albumData: AlbumInput[] = [
     year: 2014,
     date: "13 jun 2014",
     producers: "Mike Shinoda y Brad Delson",
-    spotifyAlbumId: "3XB2yloP7l00tEUmaODtVi",
     note: "Su disco más pesado y crudo, con invitados como Rakim, Daron Malakian y Tom Morello.",
     colors: {
       bg: "#cdd5d4",
@@ -307,7 +301,6 @@ export const albumData: AlbumInput[] = [
     year: 2017,
     date: "19 may 2017",
     producers: "Mike Shinoda y Brad Delson",
-    spotifyAlbumId: "5Eevxp2BCbWq25ZdiXRwYd",
     note: "Su disco más pop y el último con Chester Bennington.",
     colors: {
       bg: "#c49558",
@@ -350,7 +343,6 @@ export const albumData: AlbumInput[] = [
     year: 2024,
     date: "15 nov 2024",
     producers: "Mike Shinoda",
-    spotifyAlbumId: "4R6FV9NSzhPihHR0h4pI93",
     note: "El regreso con Emily Armstrong y Colin Brittain. N.º 1 en 14 países.",
     colors: {
       bg: "#f1efea",

@@ -76,7 +76,7 @@ export function Player({ album, track }: { album: Album; track: Track }) {
       <p className="note">
         {hasFile
           ? "Suena en la barra de abajo y sigue sonando aunque cambies de página. Pasa sola a las canciones del álbum que también tengan archivo."
-          : "Elegí el archivo de esta canción desde tu equipo. Queda guardado solo en este navegador, no se sube a ningún lado. En la página del álbum podés cargar todas las canciones de una vez."}
+          : "Elegí el archivo de esta canción desde tu equipo. Queda guardado solo en este navegador, no se sube a ningún lado."}
       </p>
     </section>
   );

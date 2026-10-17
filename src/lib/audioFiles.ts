@@ -1,6 +1,3 @@
-import { normalizeTitle } from "./importLyrics";
-import type { Track } from "./types";
-
 /**
  * Audio files the visitor picks from their own device, kept in this browser's IndexedDB under the
  * track key so they survive reloads. They never leave the browser: the site hosts no audio.
@@ -63,21 +60,3 @@ export function onAudioChange(fn: () => void) {
   return () => window.removeEventListener(EVENT, fn);
 }
 
-/**
- * Matches file names like "03 - Linkin Park - With You.mp3" to tracks. An exact title wins; otherwise
- * the longest title contained in the name, so "Breaking the Habit" never lands on a shorter title.
- */
-export function matchAudioFile(fileName: string, tracks: Track[]): Track | undefined {
-  const base = normalizeTitle(
-    fileName
-      .replace(/\.[a-z0-9]{2,5}$/i, "")
-      .replace(/linkin\s*park/gi, "")
-      .replace(/^[\s\d._-]+/, ""),
-  );
-  if (!base) return undefined;
-  const exact = tracks.find((t) => normalizeTitle(t.name) === base);
-  if (exact) return exact;
-  return tracks
-    .filter((t) => base.includes(normalizeTitle(t.name)))
-    .sort((a, b) => normalizeTitle(b.name).length - normalizeTitle(a.name).length)[0];
-}

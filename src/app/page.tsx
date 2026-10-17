@@ -1,5 +1,4 @@
 import { AlbumShelf } from "@/components/AlbumShelf";
-import { ImportLyrics } from "@/components/ImportLyrics";
 import { PageShell } from "@/components/PageShell";
 import { albums, totalTracks } from "@/lib/albums";
 
@@ -14,7 +13,6 @@ export default function Home() {
         Elegí un álbum para ver sus canciones. Cada canción tiene su reproductor, de qué trata y la letra en dos
         columnas: original a la izquierda, en español a la derecha.
       </p>
-      <ImportLyrics />
       <AlbumShelf albums={albums} />
     </PageShell>
   );

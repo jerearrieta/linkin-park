@@ -17,7 +17,7 @@ export type AlbumColors = {
 export type TrackInput = string | [title: string, feat: string];
 
 export type AlbumInput = {
-  /** Short id, also used in storage keys and import headers (e.g. "met" → "met-13") */
+  /** Short id, also used in storage keys (e.g. "met" → "met-13") */
   id: string;
   /** URL slug */
   slug: string;
@@ -25,7 +25,6 @@ export type AlbumInput = {
   year: number;
   date: string;
   producers: string;
-  spotifyAlbumId: string;
   note: string;
   colors: AlbumColors;
   singles: string[];
